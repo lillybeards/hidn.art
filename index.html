@@ -9,61 +9,71 @@
 </head>
 <body>
     <header>
+        <h1 class="heading-title">hidn.art</h1>
+        <h6 class="heading-subtitle">CFG Kickstarter x Annalise x Laura x Lilly</h6>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="illusions.html">Illusions</a>
+            <a class="nav-link" href="store.html">Store</a>
         </nav>
     </header>
+
     <main>
-        <h1>Welcome to Our Website</h1>
-        <p>This is the home page.</p>
+        <!--INTRODUCTORY TEXT-->
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                  <div class="image-container">
-                    <img src="images/weave.JPG" alt="Weave">
-                    <div class="overlay">
-                      <img src="images/weave-process.JPG" alt="Weave Process">
+        <!--IMAGE GALLERY WITH JS HOVER-->
+        <div class="content-container">
+            <h2 class="title-fuschia">.art+process</h2> <br>
+            <h5 class="subtitle-navy">hover over the images for an insight into how the work is made</h5> <br>
+
+            <div class="gallery-container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="image-container">
+                            <img src="images/weave.JPG" alt="cloth woven on a dobby loom">
+                            <div class="overlay">
+                                <img src="images/weave-process.JPG" alt="digital weave drafting software">
+                            </div>
+                            <div class="caption" data-hover-caption="weave drafting software, which programs the loom">cloth woven on a dobby loom</div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="image-container">
-                    <img src="images/naturaldye.JPG" alt="Image 2">
-                    <div class="overlay">
-                      <img src="images/naturaldye-process.jpg" alt="Hover Image 2">
+                    <div class="col-md-3">
+                        <div class="image-container">
+                            <img src="images/naturaldye.JPG" alt="Natural Dye">
+                            <div class="overlay">
+                                <img src="images/naturaldye-process.jpg" alt="Natural Dye Process">
+                            </div>
+                            <div class="caption" data-hover-caption="cabbage boiled down to extract colour for dye">naturally dyed yarn samples</div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="image-container">
-                    <img src="images/tufting.jpg" alt="Image 3">
-                    <div class="overlay">
-                      <img src="images/tufting-process.jpg" alt="Hover Image 3">
+                    <div class="col-md-3">
+                        <div class="image-container">
+                            <img src="images/tufting.jpg" alt="Tufting">
+                            <div class="overlay">
+                                <img src="images/tufting-process.jpg" alt="Tufting Process">
+                            </div>
+                            <div class="caption" data-hover-caption="hand drawings in crayon to design the final piece">tufted art rug</div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="image-container">
-                    <img src="images/markmaking.PNG" alt="Image 4">
-                    <div class="overlay">
-                      <img src="images/markmaking-process.jpg" alt="Hover Image 4">
+                    <div class="col-md-3">
+                        <div class="image-container">
+                            <img src="images/markmaking.PNG" alt="mark making in ink">
+                            <div class="overlay">
+                                <img src="images/markmaking-process.jpg" alt="Mark Making Process">
+                            </div>
+                            <div class="caption" data-hover-caption="branches, leaves, and chopsticks used as brushes">mark making in ink</div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-            <script src="script.js"></script>
-          
+        </div>
+        <!-- END OF IMAGE GALLERY WITH JS HOVER-->
 
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
     </main>
 </body>
 </html>

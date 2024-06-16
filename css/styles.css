@@ -1,4 +1,4 @@
-/* Defining the fonts */
+/* FONTS */
 @font-face {
     font-family: 'LeagueSpartan';
     src: url('../fonts/LeagueSpartan-Bold.otf') format('opentype');
@@ -28,9 +28,17 @@
 }
 
 /* Override Bootstrap heading fonts */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4 {
     font-family: 'LeagueSpartan', sans-serif;
     font-weight: bold;
+    text-align: center;
+}
+
+/* Override Bootstrap paragraph fonts */
+h3, h5, h6 {
+    font-family: 'NeueMachina', sans-serif;
+    font-weight: 400; /* Regular */
+    text-align: center;
 }
 
 /* Override Bootstrap paragraph fonts */
@@ -39,21 +47,108 @@ p, body {
     font-weight: 400; /* Regular */
 }
 
-/* styles.css */
+/* COLOURS */
+body {
+    background-color: #E4E3D3;
+}
+
+
+/* CLASSES AND ELEMENTS */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e8afe0;
+    padding: 0px;
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
+.heading-title {
+    font-family: 'LeagueSpartan', sans-serif;
+    font-weight: bold;
+    font-size: 4.5em;
+    color:#2E2D4D;
+    margin-top: 0.5em;
+}
+
+.heading-subtitle {
+    font-family: 'NeueMachina', sans-serif;
+    color:#2E2D4D;
+    margin: 0;
+    padding: 0;
+}
+
+.title-fuschia {
+    color: #CB48B7;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.subtitle-navy {
+    color: #2E2D4D;
+    font-style: italic;
+    display: inline-block;
+    padding: 5px 10px 15px;
+}
+
+.title-green {
+    color: #6D9F71;
+}
+
+.title-cream {
+    color: #E4E3D3;
+}
+
+/* NAV BAR */
+nav {
+    background-color: #6D9F71;
+    margin: 15px;
+    padding: 10px 0; 
+    border-radius: 20px;
+    text-align:center;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #E4E3D3;
+    text-decoration: none;
+    padding: 0 10px; 
+    display: inline-block; /*keeps nav links next to eachother instead of stacked*/
+}
+
+.nav-link:hover {
+    color: #CB48B7;
+}
+
+/* Container for the titles and image gallery */
+.content-container {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 0 auto; /* Center the container */
+    max-width: 1000px;
+    margin-top: 300px; /* Adjust as needed to avoid overlap */
+    text-align: center;
+}
+
+/* IMAGE GALLERY HOVER */
 .image-container {
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
-  }
-  
-  .image-container img {
+    border-radius: 0px;
+}
+
+.image-container img {
     max-width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
-  }
-  
-  .image-container .overlay {
+}
+
+.image-container .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -61,13 +156,22 @@ p, body {
     height: 100%;
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
-  
-  .image-container:hover .overlay {
+}
+
+.image-container:hover .overlay {
     opacity: 1;
-  }
-  
-  .image-container:hover img {
-    transform: scale(1.1);
-  }
-  
+}
+
+/* Caption styling */
+.caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: regular;
+    color: #2E2D4D;
+    transition: color 0.3s ease;
+}
+
+.image-container:hover .caption {
+    color: #CB48B7;
+}
