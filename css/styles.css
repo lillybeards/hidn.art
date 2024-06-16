@@ -1,4 +1,4 @@
-/* Define the fonts using @font-face */
+/* Defining the fonts */
 @font-face {
     font-family: 'LeagueSpartan';
     src: url('../fonts/LeagueSpartan-Bold.otf') format('opentype');
@@ -38,3 +38,36 @@ p, body {
     font-family: 'NeueMachina', sans-serif;
     font-weight: 400; /* Regular */
 }
+
+/* styles.css */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1);
+  }
+  
