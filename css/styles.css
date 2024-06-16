@@ -1,0 +1,53 @@
+/* Define the fonts using @font-face */
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('../fonts/LeagueSpartan-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueMachina';
+    src: url('../fonts/NeueMachina-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueMachina';
+    src: url('../fonts/NeueMachina-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeueMachina';
+    src: url('../fonts/NeueMachina-Ultrabold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Apply the fonts to your elements */
+body {
+    font-family: 'NeueMachina', sans-serif;
+}
+
+h1 {
+    font-family: 'LeagueSpartan', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'NeueMachina', sans-serif;
+    font-weight: 800; /* Ultrabold */
+}
+
+p.light {
+    font-family: 'NeueMachina', sans-serif;
+    font-weight: 300; /* Light */
+}
+
+p.regular {
+    font-family: 'NeueMachina', sans-serif;
+    font-weight: 400; /* Regular */
+}
