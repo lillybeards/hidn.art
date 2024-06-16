@@ -27,27 +27,14 @@
     font-style: normal;
 }
 
-/* Apply the fonts to your elements */
-body {
-    font-family: 'NeueMachina', sans-serif;
-}
-
-h1 {
+/* Override Bootstrap heading fonts */
+h1, h2, h3, h4, h5, h6 {
     font-family: 'LeagueSpartan', sans-serif;
     font-weight: bold;
 }
 
-h2 {
-    font-family: 'NeueMachina', sans-serif;
-    font-weight: 800; /* Ultrabold */
-}
-
-p.light {
-    font-family: 'NeueMachina', sans-serif;
-    font-weight: 300; /* Light */
-}
-
-p.regular {
+/* Override Bootstrap paragraph fonts */
+p, body {
     font-family: 'NeueMachina', sans-serif;
     font-weight: 400; /* Regular */
 }
