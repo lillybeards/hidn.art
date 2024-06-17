@@ -1,5 +1,4 @@
-// script.js
-
+// image gallery hover
 document.addEventListener("DOMContentLoaded", function () {
     var imageContainers = document.querySelectorAll(".image-container");
 
@@ -17,3 +16,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+// end of image gallery hover

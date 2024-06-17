@@ -52,9 +52,7 @@ body {
     background-color: #E4E3D3;
 }
 
-
 /* CLASSES AND ELEMENTS */
-
 header {
     position: fixed;
     top: 0;
@@ -62,20 +60,20 @@ header {
     width: 100%;
     background-color: #e8afe0;
     margin-bottom: 60px;
-    z-index: 1000; /* Ensure the header is above other content */
+    z-index: 1000; /*ensures the header is above other content*/
 }
 
 .heading-title {
     font-family: 'LeagueSpartan', sans-serif;
     font-weight: bold;
     font-size: 4.5em;
-    color:#2E2D4D;
+    color: #2E2D4D;
     margin-top: 0.5em;
 }
 
 .heading-subtitle {
     font-family: 'NeueMachina', sans-serif;
-    color:#2E2D4D;
+    color: #2E2D4D;
     margin: 0;
     padding: 0;
 }
@@ -109,14 +107,15 @@ header {
 
 a {
     color: #6D9F71;
-  }
+}
+
 /* NAV BAR */
 nav {
     background-color: #6D9F71;
     margin: 15px;
-    padding: 10px 0; 
+    padding: 10px 0;
     border-radius: 20px;
-    text-align:center;
+    text-align: center;
 }
 
 .nav-link {
@@ -124,12 +123,37 @@ nav {
     font-weight: bold;
     color: #E4E3D3;
     text-decoration: none;
-    padding: 0 10px; 
-    display: inline-block; /*keeps nav links next to eachother instead of stacked*/
+    padding: 0 10px;
+    display: inline-block; /*keeps nav links next to each other instead of stacked*/
 }
 
 .nav-link:hover {
     color: #CB48B7;
+}
+
+/* INTRO CONTAINER */
+.round-container {
+    padding: 15px;
+    border-radius: 25px;
+    margin: 0 auto; /*centres container*/
+    max-width: 1000px;
+    margin-top: 250px; /*adjust as needed to avoid overlap*/
+    text-align: center;
+}
+
+/* INTRO IMAGE CONTAINERS */
+.round-image-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.round-image-container img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
 }
 
 /* INTRO CONTAINER */
@@ -138,9 +162,9 @@ nav {
     color: #FFFFFF;
     padding: 25px;
     border-radius: 25px;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
     max-width: 1000px;
-    margin-top: 250px; /* Adjust as needed to avoid overlap */
+    margin-top: 25px;
     text-align: center;
 }
 
@@ -149,9 +173,9 @@ nav {
     background-color: #FFFFFF;
     padding: 15px;
     border-radius: 25px;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
     max-width: 1000px;
-    margin-top: 50px; /* Adjust as needed to avoid overlap */
+    margin-top: 25px;
     text-align: center;
 }
 
@@ -196,3 +220,4 @@ nav {
 .image-container:hover .caption {
     color: #CB48B7;
 }
+
