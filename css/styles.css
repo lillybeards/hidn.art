@@ -221,3 +221,11 @@ nav {
     color: #CB48B7;
 }
 
+/* Card styling */
+.card {
+    position: relative;
+    max-width: 450px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
