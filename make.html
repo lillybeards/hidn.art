@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>make.art</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="heading-title">hidn.art</h1>
+        <h6 class="heading-subtitle">CFG Kickstarter x Annalise x Laura x Lilly</h6>
+        <nav>
+            <a class="nav-link" href="index.html">home</a>
+            <a class="nav-link" href="illusions.html">illusions</a>
+            <a class="nav-link" href="make.html">make</a>
+        </nav>
+    </header>
+    
+    <main>
+    <div class="canvasbody">
+    <div class="toolbar">
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker" value="#000000">
+        <label for="brushSize">Brush Size:</label>
+        <input type="range" id="brushSize" min="1" max="20" value="5">
+        <button id="clearButton">Clear</button>
+    </div>
+    <canvas id="drawingCanvas"></canvas>
+    <script src="js/scripts.js"></script>
+    </div>
+    </main>
+
+</body>
+
+
+</html>
