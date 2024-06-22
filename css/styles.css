@@ -258,6 +258,12 @@ nav {
     margin-top: 25px;
 }
 
+.btn-light {
+    color:#FFFFFF;
+    background-color:#CB48B7;
+    padding: 3px;
+}
+
 
 canvas {
     border: 2px solid #2E2D4D;
