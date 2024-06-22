@@ -131,6 +131,10 @@ nav {
     color: #CB48B7;
 }
 
+.nav-selected {
+    color:#CB48B7;
+}
+
 /* INTRO CONTAINER */
 .round-container {
     padding: 15px;
