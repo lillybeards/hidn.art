@@ -26,13 +26,16 @@
         </div>
 
     <div class="canvasbody">
-    <div class="toolbar">
-        <label for="colorPicker">colour:</label>
-        <input type="color" id="colorPicker" value="#000000">
-        <label for="brushSize">brush size:</label>
-        <input type="range" id="brushSize" min="1" max="20" value="5">
-        <button id="clearButton">clear canvas</button>
-    </div>
+        <div class="toolbar">
+            <label for="colorPicker">colour:</label>
+            <input type="color" id="colorPicker" value="#000000">
+            <label for="brushSize">brush size:</label>
+            <input type="range" id="brushSize" min="1" max="80" value="5">
+            <button id="clearButton">clear canvas</button>
+            <button id="undoButton">undo</button>
+            <button id="saveButton">save as jpg</button>
+        </div>
+        
     <canvas id="drawingCanvas"></canvas>
     <script src="js/scripts.js"></script>
     </div>
