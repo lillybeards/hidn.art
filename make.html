@@ -20,13 +20,18 @@
     </header>
     
     <main>
+        <div>
+            <h2 class="maketitle">make.art</h2>
+            <p class="makesubtitle">select a colour and brush width, and get drawing!</p>
+        </div>
+
     <div class="canvasbody">
     <div class="toolbar">
-        <label for="colorPicker">Color:</label>
+        <label for="colorPicker">colour:</label>
         <input type="color" id="colorPicker" value="#000000">
-        <label for="brushSize">Brush Size:</label>
+        <label for="brushSize">brush size:</label>
         <input type="range" id="brushSize" min="1" max="20" value="5">
-        <button id="clearButton">Clear</button>
+        <button id="clearButton">clear canvas</button>
     </div>
     <canvas id="drawingCanvas"></canvas>
     <script src="js/scripts.js"></script>

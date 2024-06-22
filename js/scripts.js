@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
 const canvas = document.getElementById('drawingCanvas'); //sets up canvas as a variable and links it to the drawingCanvas element in the HTML
 const ctx = canvas.getContext('2d'); //ctx is a variable - 2D rendering context 
 
-canvas.width = window.innerWidth * 0.6; 
-canvas.height = window.innerHeight * 0.6;
+canvas.width = window.innerWidth * 0.5; 
+canvas.height = window.innerHeight * 0.5;
 
 let drawing = false; //tracks whether the user is drawing - defaults to 'false' when page loads
 let color = document.getElementById('colorPicker').value; //links to colour picker in HTML; selects the colour from user input and stores in the variable 'color'
@@ -57,12 +57,52 @@ function draw(event) {
     if (!drawing) return; //checks if drawing has been activated by the listeners above
 
     ctx.lineWidth = brushSize;
-    ctx.lineCap = 'round'; //rounded brush - could add an option for user selection of brusht type?
+    ctx.lineCap = 'round'; //rounded brush - could add an option for user selection of brush type?
     ctx.strokeStyle = color;
 
-    ctx.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop); //creates a line following the mouse position
+    const rect = canvas.getBoundingClientRect(); //identifies where the canvas is - should stop the issue where mouse location and line are not matched
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    ctx.lineTo(x, y); //creates a line following the mouse position
     ctx.stroke(); //actually draws the line
-    ctx.beginPath(); //starts a new path when mouse lifted/clicked, to stop the lines be connected 
-    ctx.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop); //moves drawing position to current mouse position
+    ctx.beginPath(); //starts a new path when mouse lifted/clicked, to stop the lines being connected 
+    ctx.moveTo(x, y); //moves drawing position to current mouse position
 }
+
 //end of canvas
+
+// Touch event listeners for mobile devices
+canvas.addEventListener('touchstart', (event) => {
+    event.preventDefault();
+    drawing = true;
+    drawTouch(event);
+});
+
+canvas.addEventListener('touchend', () => {
+    drawing = false;
+    ctx.beginPath();
+});
+
+canvas.addEventListener('touchmove', (event) => {
+    event.preventDefault();
+    drawTouch(event);
+});
+
+function drawTouch(event) {
+    if (!drawing) return;
+
+    const touch = event.touches[0];
+    const rect = canvas.getBoundingClientRect();
+    const x = touch.clientX - rect.left;
+    const y = touch.clientY - rect.top;
+
+    ctx.lineWidth = brushSize;
+    ctx.lineCap = 'round';
+    ctx.strokeStyle = color;
+
+    ctx.lineTo(x, y);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+}

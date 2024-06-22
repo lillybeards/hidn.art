@@ -231,8 +231,27 @@ nav {
 }
 
 /* Canvas */
-.toolbar {
+
+.maketitle {
+    background-color: #CB48B7;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0 auto; /*centres container*/
+    border-radius: 25px;
+    max-width: 200px;
+    text-align: center;
     margin-top: 250px;
+}
+
+.makesubtitle {
+    padding: 10px;
+    margin: 0 auto; /*centres container*/
+    max-width: 300px;
+    text-align: center;
+}
+
+.toolbar {
+    margin-top: 25px;
 }
 
 
@@ -247,4 +266,34 @@ canvas {
     align-items: center;
     margin: 0 auto;
     padding: 0;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .canvasbody {
+        width: 100%;
+        padding: 10px;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto; /* maintain aspect ratio */
+    }
+
+    .toolbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .toolbar label, .toolbar input, .toolbar button {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .maketitle, .makesubtitle {
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
 }
