@@ -142,3 +142,15 @@ function clearCanvas() {
     ctx.fillStyle = "#FFFFFF"; // set fill color to white
     ctx.fillRect(0, 0, canvas.width, canvas.height); // fill the entire canvas with white
 }
+
+// Enables fruit images to change/invert at click of a button
+function imagefun() {
+    var ReverseImage = document.getElementById(".container-fluid-reverse img");
+        if (ReverseImage.src.match(".images/fruit-basket.jpg")) {
+            ReverseImage.src = (".images/fruit-basket-rev.jpg")
+        }
+        else {
+            ReverseImage.src = (".images/fruit-basket.jpg")
+        }
+    }
+

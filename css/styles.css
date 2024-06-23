@@ -71,6 +71,14 @@ header {
     margin-top: 0.5em;
 }
 
+.heading-title-illusions {
+    font-family: 'LeagueSpartan', sans-serif;
+    font-weight: bold;
+    font-size: 3.2em;
+    color: #2E2D4D;
+    margin-top: 0.5em;
+}
+
 .heading-subtitle {
     font-family: 'NeueMachina', sans-serif;
     color: #2E2D4D;
@@ -80,6 +88,12 @@ header {
 
 .title-fuschia {
     color: #CB48B7;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.title-navy {
+    color: #2E2D4D;
     display: inline-block;
     padding: 5px 10px;
 }
@@ -173,6 +187,18 @@ nav {
     text-align: center;
 }
 
+/* ILLUSIONS INTRO CONTAINER */
+.illusions-intro-container {
+    background-color: #6D9F71;
+    color: #2E2D4D;
+    padding: 30px; 
+    border-radius: 30px;
+    margin: 0 auto; 
+    max-width: 1000px;
+    margin-top: 30px;
+    text-align: center;
+}
+
 /* IMAGE GALLERY CONTAINER */
 .content-container {
     background-color: #FFFFFF;
@@ -183,6 +209,7 @@ nav {
     margin-top: 25px;
     text-align: center;
 }
+
 
 /* IMAGE GALLERY HOVER */
 .image-container {
@@ -211,6 +238,49 @@ nav {
 .image-container:hover .overlay {
     opacity: 1;
 }
+
+/* ILLUSIONS FRUIT MAN */
+.container-fluid-reverse {
+background-color: #FFFFFF;
+padding: 15px;
+border-radius: 25px;
+margin: 0 auto;
+max-width: 1000px;
+height: auto;
+object-fit: contain;
+margin-top: 25px;
+text-align: center;
+text-justify: inter-word;
+}
+
+.container-fluid-reverse img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    text-align: center; 
+    border-radius: 10%
+}
+
+.container-fluid-reverse img#getImage {
+    max-width: 75%;
+    height: auto;
+    display: block;
+}
+/* END OF ILLUSIONS FRUIT MAN */
+
+/* IMAGE ESCHER */
+.img-magnifier-container-fluid {
+    background-color: #2E2D4D;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 0 auto;
+    max-width: 1400px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 25px;
+    text-align: center;
+    text-justify: inter-word;
+    }
 
 /* Caption styling */
 .caption {
@@ -308,3 +378,4 @@ canvas {
         font-size: 1.5em;
     }
 }
+

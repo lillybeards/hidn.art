@@ -14,11 +14,11 @@
 <body>
     
     <header>
-        <h1 class="heading-title">illusions @ hidn.art</h1>
+        <h1 class="heading-title-illusions">illusions @ hidn.art</h1>
         <h6 class="heading-subtitle">CFG Kickstarter x Annalise x Laura x Lilly</h6>
         <nav>
-            <a class="nav-link nav-selected" href="index.html">home</a>
-            <a class="nav-link" href="illusion.html">illusion</a>
+            <a class="nav-link" href="index.html">home</a>
+            <a class="nav-link nav-selected" href="illusion.html">illusion</a>
             <a class="nav-link" href="make.html">make</a>
         </nav>
     </header>
@@ -57,5 +57,64 @@
             </div>
      
         <!--END OF ROUND INTRO IMAGES-->
+ 
+        <!-- INTRO CONTAINER  -->
+        <div class="illusions-intro-container">
+            <h2>optical illusions at hidn.art</h2>
+            <p> Since the time of the ancient Greeks, <b>illusion art</b> has been practised. Skilled artists realised they could 'trick' viewers into perceiving 2-dimensional artworks, drawn or painted onto flat surfaces, as 3-dimensional people or objects.</p>
+            <p> Over time, optical illusions in art have become more sophisticated and self-referential. Over the last hundred years in particular, many 'illusionary' artworks have been produced to explore the limitations and possibilities of human powers of perception and psychology.  </p>
+        </div>
+    <!-- END OF INTRO CONTAINER -->
+
+    <!-- FRUIT MAN CONTAINER -->
+     <div class="container-fluid-reverse mt-3">
+            <div class="row">
+              <div class="col-sm-12 p-3">
+                <h2 class="title-fuschia">Reversible illusions</h2> <br>
+                <h5 class="subtitle-navy">click on the button below the image to see how your perspective changes as the image is reversed</h5>
+              </div>
+
+            <div class="row">
+             <div class="col-sm-1 p-1"></div>
+              <div class="col-sm-6 p-3">
+    
+                <img src="./images/fruit-basket.jpg" class="mx-auto" id='container-fluid-reverse img' alt="Head with Fruit Basket by Giuseppe Arcimboldo, 1590">
+                  <br></br>
+                   <input type="button" onclick="imagefun()" value="Invert Image">
+            
+                <script>
+                    function imagefun() {
+                        var ReverseImage = document.getElementById('container-fluid-reverse img');
+                        if (ReverseImage.src.match("./images/fruit-basket.jpg")){
+                            ReverseImage.src = "./images/fruit-basket-rev.jpg";
+                        }
+                        else {
+                            ReverseImage.src = "./images/fruit-basket.jpg";
+                        }
+                    }
+                </script>
+                </div>
+            <div class="col-sm-3 p-3">
+                <br></br>
+                <h2 class="title-navy">Giuseppe Arcimboldo's "Head with Fruit Basket", 1590.</h5>
+                </div>
+            <div class="col-sm-2 p-1"></div>
+            </div>
+        </div> 
+    </div>
+<!-- END OF FRUIT MAN CONTAINER -->
+
+<!-- ESCHER CONTAINER -->
+<div class="img-magnifier-container-fluid mt-3">
+        <div class="row">
+            <div class="col-sm-12 p-3">
+                <h2 class="title-cream">exploring hidn.depths of escher's "relativity"</h2>
+                 </div>
+            <div class="col-sm-12 p-3">
+              <img id="relativity" src="./images/relativity-escher.jpeg" class="img-thumbnail" alt="Relativity by M.C. Esher, 1953">
+            </div>
+        </div>
+    </div>
+
     </body>
     </html>
